@@ -37,7 +37,13 @@ namespace AddressBookDay23
                 add.CreateContact(FirstName, LastName, Address, City, State, Email, Zip, PhoneNum);
                 Contact--;
             }
-        
+            Console.WriteLine("Do YOu Want To MOdify(Y/N)");
+            char ch = Convert.ToChar(Console.ReadLine());
+            if (ch == 'Y' || ch == 'y')
+            {
+                add.EditContact();
+            }
+            
         }
         public void DisplayContacts(AddressBook[] ContactArray, int n)
         {
